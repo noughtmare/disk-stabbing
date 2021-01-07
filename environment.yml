@@ -1,0 +1,24 @@
+name: disk-stabbing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+    # for the gui we need gtk and cairo:
+  - gtk3
+  - pycairo
+  - pygobject
+
+    # for pip dependencies we need pip:
+  - pip
+
+    # for git dependencies we need git:
+  - git
+
+    # dependencies of scikit-geometry:
+  - cgal-cpp
+  - pybind11
+  - matplotlib
+
+    # the latest version of scikit-geometry from github:
+  - pip:
+     - "--editable=git+https://github.com/scikit-geometry/scikit-geometry.git@42d8276f6cb9695b595e45f2fe8e448e22601cc2#egg=skgeom"
