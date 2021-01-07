@@ -11,9 +11,6 @@ dependencies:
     # for pip dependencies we need pip:
   - pip
 
-    # for git dependencies we need git:
-  - git
-
     # dependencies of scikit-geometry:
   - cgal-cpp
   - pybind11
